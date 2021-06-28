@@ -33,7 +33,12 @@ test('if row is filled, player should be notified they won ' async () =>{
     let button = await (await driver).findElement(By.id('click-box'));
     await button.click();
 });
+test('clicking upper left square adds x to the square', asybnc function()[
+    const upperLeftSquare = await driver.findElement(By.id('cell-0'));
+upperLeftSquare.click();
 
+await driver.sleep(2000)
+})
 // okay so the issue with the tests is that im a little confused as to what im being reqauested of, Im not sure of the let var being used in all of them being i think some need a different type of statement/??
 
 // when we have 1:1 please go over this with me because im a little confused.
